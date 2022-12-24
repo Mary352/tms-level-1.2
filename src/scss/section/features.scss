@@ -1,0 +1,27 @@
+.features{
+   padding-top: 115px;
+   padding-bottom: 135px;
+
+   &__descr-list{
+      display: flex;
+      flex-wrap: wrap;
+      margin: -45px -15px;
+
+      .descr-list__item{
+         width: calc(100% / 3 - 30px);
+         margin: 45px 15px;
+
+         .features__icon--wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 65px;
+         }
+
+         .h4-title{
+            margin-bottom: 55px;
+            text-transform: uppercase;
+         }
+      }
+   }
+}

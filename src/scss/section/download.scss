@@ -1,0 +1,17 @@
+.download{
+   padding-top: 115px;
+   padding-bottom: 115px;
+
+   .regular-text{
+      margin-bottom: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+
+   &__title{
+      font-weight: 500;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 30px;
+   }
+}

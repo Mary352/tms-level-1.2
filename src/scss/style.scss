@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;600;700;900&display=swap');
+
+@import "./variables/variables.scss";
+@import "./section/null-style.scss";
+@import "./section/header.scss";
+@import "./section/main-banner.scss";
+@import "./section/features.scss";
+@import "./section/work.scss";
+@import "./section/our-team.scss";
+@import "./section/testimonials.scss";
+@import "./section/download.scss";
+@import "./section/footer.scss";
+
+.container{
+   max-width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+   position: relative;
+   z-index: 1;
+}
+
+.h1-title{
+   font-weight: 900;
+   font-size: 64px;
+   line-height: 75px;
+   color: $white;
+   text-align: center;
+}
+
+.h2-text{
+   font-family: 'Cardo';
+   font-style: italic;
+   font-size: 36px;
+   line-height: 49px;
+   // font-weight: 700;
+   // font-size: 36px;
+   // line-height: 42px;
+}
+
+.h3-title{
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 35px;
+   text-align: center;
+}
+
+
+.h4-title{
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+}
+
+.regular-text{
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+
+   &--bold{
+      font-weight: 500;
+   }
+
+   &--red-color{
+      color: $red;
+      text-transform: uppercase;
+   }
+
+   &--gray-color{
+      color: $gray;
+   }
+}
+
+.small-text{
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 15px;
+}
+
+.button{
+   background-color: $red;
+   margin: 0 auto;
+   width: 370px;
+   height: 80px;
+   text-align: center;
+   color: $white;
+   padding: 25px 0;
+   text-transform: uppercase;
+   transition: 0.3s;
+
+   &:hover{
+      background-color: $highlight-color;
+   }
+
+   &:active{
+      background-color: $red;
+      box-shadow: 4px 4px 30px $red;
+   }
+}
+
+#facebook{
+   width: 10px;
+   height: 18px;
+}
+
+#twitter{
+   width: 20px;
+   height: 16px;
+}

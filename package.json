@@ -1,0 +1,22 @@
+{
+  "name": "tms-level-1",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "pro": "parcel build src/index.html --no-source-maps --no-cache --public-url ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "jquery": "^3.6.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.1",
+    "parcel": "^2.8.1"
+  }
+}
