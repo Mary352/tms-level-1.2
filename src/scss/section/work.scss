@@ -3,12 +3,11 @@
    &__works-gallery{
       display: flex;
       flex-wrap: wrap;
-      margin: -1px -1px;
 
       .works-gallery__example{
          position: relative;
          width: calc(100% / 4 - 2px);
-         margin: 1px 1px;
+         margin: 1px;
 
          .example__img{
             // width: calc(100% / 4 - 2px);

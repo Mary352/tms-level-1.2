@@ -5,7 +5,8 @@
       .slider__slider-item{
          display: flex;
          width: 100%;   
-         background-color: $slide-bg;     
+         background-color: $slide-bg;  
+         cursor: pointer;   
 
 
          .slider-item__img--wrapper{
@@ -26,7 +27,11 @@
          .slider-item__text{
             width: 50%;
             color: $white;
-            padding: 135px 190px 115px 130px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 190px;
+            padding-left: 130px;
 
             .small-text{
                text-transform: uppercase;
@@ -34,5 +39,32 @@
             }
          }
       }
+   }
+   &__slider .slick-dots{
+      position: static;
+      margin-top: 25px;
+   }
+   
+   &__slider .slick-dots li{
+      margin: 0 15px;
+   }
+
+   &__slider .slick-dots li button:before{
+      display: none;
+   }
+
+   &__slider .slick-dots button{
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid #7E5D6F;
+   }
+
+   &__slider .slick-dots li.slick-active button{
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid $dots-color;
+      background-color: $dots-color;
    }
 }

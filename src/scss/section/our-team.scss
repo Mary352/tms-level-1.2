@@ -45,26 +45,24 @@
                margin: 0 3px;
                display: flex;
                justify-content: center;
-               align-items: center;
+               align-items: center;              
 
-               // svg{
-               //    max-width: 30px;
-               //    max-height: 30px;
-               // }
-
-               .facebook{
-                  width: 10px;
-                  height: 18px;
+               svg{
+                  // max-width: 30px;
+                  // max-height: 30px;
+                  fill: $gray-icon;
                }
+            }
 
-               .twitter{
-                  width: 20px;
-                  height: 16px;
-               }
+            .person-card__icon--wrapper:hover{
+               border: 1px solid $red;
+               transition: 0.3s;
 
-               .linkedin{
-                  width: 18px;
-                  height: 18px;
+               svg{
+                  // max-width: 30px;
+                  // max-height: 30px;
+                  fill: $red;
+                  transition: 0.3s;
                }
             }
          }

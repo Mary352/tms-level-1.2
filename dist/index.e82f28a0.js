@@ -534,8 +534,9 @@ function hmrAcceptRun(bundle, id) {
 },{}],"dV6cC":[function(require,module,exports) {
 $(document).ready(function() {
     $(".testimonials__slider").slick({
-        arrow: false,
-        dots: true
+        arrows: false,
+        dots: true,
+        initialSlide: 1
     });
 });
 
