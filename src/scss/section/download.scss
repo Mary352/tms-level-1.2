@@ -5,6 +5,11 @@
       padding: 75px 0;
    }
 
+   @media (max-width: $breakpoint_md){
+      padding-top: 35px;
+      padding-bottom: 45px;
+   }
+
    .regular-text{
       margin-bottom: 50px;
       font-weight: 700;
@@ -17,6 +22,7 @@
       @media (max-width: $breakpoint_md){
          font-size: 13px;
          line-height: 15px;
+         margin-bottom: 10px;
       }
    }
 

@@ -6,6 +6,10 @@
       padding-top: 45px;
    }
 
+   @media (max-width: $breakpoint_md){
+      padding-top: 35px;
+   }
+
    &__contacts{
       display: flex;
       margin: 0 -15px;
@@ -15,9 +19,19 @@
          padding-bottom: 40px;
       }
 
+      @media (max-width: $breakpoint_md){
+         flex-direction: column;
+         margin: 0;
+      }
+
       .footer__contact{
          width: calc(100% / 3 - 30px);
          margin: 0 15px;
+
+         @media (max-width: $breakpoint_md){
+            margin: 0;
+            width: 100%;
+         }
 
          .regular-text{
             color: $white;
@@ -31,6 +45,10 @@
             @media (max-width: $breakpoint_xl){
                margin-bottom: 15px;
             }
+
+            @media (max-width: $breakpoint_xl){
+               margin-bottom: 35px;
+            }
          }
 
          .footer__icons--wrapper{
@@ -40,6 +58,10 @@
 
             @media (max-width: $breakpoint_xl){
                margin: 30px -10px 0;
+            }
+
+            @media (max-width: $breakpoint_md){
+               margin-top: 0;
             }
 
             .footer__icon--wrapper{
@@ -76,17 +98,33 @@
                }
             }
          }
+      } 
+      
+      .footer__contact:not(.footer__contact:last-child, .footer__contact:first-child){
+         @media (max-width: $breakpoint_md){
+            margin-bottom: 60px;
+         }        
+         
+      }
 
+      .footer__contact:first-child{
 
-      }      
+         @media (max-width: $breakpoint_md){
+            margin-bottom: 70px;
+         }
+      } 
    }
 
    &__copyright{
       background-color: $footer-bg-color-dark;
-      padding: 30px 0;
+      padding: 30px 15px;
 
       @media (max-width: $breakpoint_xl){
-         padding: 15px 0;
+         padding: 15px 15px;
+      }
+
+      @media (max-width: $breakpoint_md){
+         padding: 30px 15px;
       }
 
       .regular-text{
@@ -98,6 +136,11 @@
 
          @media (max-width: $breakpoint_xl){
             max-width: 315px;
+         }
+
+         @media (max-width: $breakpoint_md){
+            max-width: 100%;
+            width: 100%;
          }
 
          .highlight{
