@@ -2,25 +2,52 @@
    padding-top: 115px;
    padding-bottom: 135px;
 
+   @media (max-width: $breakpoint_xl){
+      padding-top: 75px;
+      padding-bottom: 80px;
+   }
+
    &__descr-list{
       display: flex;
       flex-wrap: wrap;
       margin: -45px -15px;
 
+      @media (max-width: $breakpoint_xl){
+         margin: -25px -10px;
+      }
+
       .descr-list__item{
          width: calc(100% / 3 - 30px);
          margin: 45px 15px;
 
+         @media (max-width: $breakpoint_xl){
+            width: calc(100% / 3 - 20px);
+            margin: 25px 10px;
+         }
+
          .features__icon--wrapper{
             display: flex;
             justify-content: center;
+            // align-items: flex-end;
             align-items: center;
             margin-bottom: 65px;
+            // width: 100px;
+            height: 100px;
+
+            @media (max-width: $breakpoint_xl){
+               margin-bottom: 55px;
+               // width: 85px;
+               height: 85px;
+            }
          }
 
          .h4-title{
-            margin-bottom: 55px;
+            margin-bottom: 50px;
             text-transform: uppercase;
+
+            @media (max-width: $breakpoint_xl){
+               margin-bottom: 25px;
+            }
          }
       }
    }

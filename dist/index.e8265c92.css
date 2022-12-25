@@ -21,16 +21,21 @@ a {
 
 .header {
   width: 100%;
-  z-index: 5;
   background-color: #0000;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.header__container {
+.header .header__container {
   justify-content: space-between;
   display: flex;
+}
+
+@media (max-width: 1200px) {
+  .header .header__container {
+    padding-left: 1%;
+  }
 }
 
 .header__logo--wrapper {
@@ -48,6 +53,12 @@ a {
   position: relative;
 }
 
+@media (max-width: 1200px) {
+  .header__nav .nav__list .list-link {
+    padding: 40px 30px;
+  }
+}
+
 .header__nav .nav__list .list-link:active {
   color: #e71414;
 }
@@ -61,6 +72,14 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+@media (max-width: 1200px) {
+  .header__nav:after {
+    width: 98%;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .list-link:hover.list-link:after {
@@ -87,17 +106,31 @@ a {
 
 .main-banner {
   background: url("main-bg.feb67d8f.jpg") center / cover no-repeat;
-  padding-top: 245px;
+  padding-top: 230px;
   padding-bottom: 120px;
   position: relative;
+}
+
+@media (max-width: 1200px) {
+  .main-banner {
+    padding-top: 255px;
+    padding-bottom: 125px;
+  }
 }
 
 .main-banner p {
   color: #fff;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 90px;
+  margin-top: 30px;
+  margin-bottom: 80px;
   font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .main-banner p {
+    margin-top: 60px;
+    margin-bottom: 90px;
+  }
 }
 
 .main-banner:after {
@@ -117,10 +150,23 @@ a {
   padding-bottom: 135px;
 }
 
+@media (max-width: 1200px) {
+  .features {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+}
+
 .features__descr-list {
   flex-wrap: wrap;
   margin: -45px -15px;
   display: flex;
+}
+
+@media (max-width: 1200px) {
+  .features__descr-list {
+    margin: -25px -10px;
+  }
 }
 
 .features__descr-list .descr-list__item {
@@ -128,16 +174,37 @@ a {
   margin: 45px 15px;
 }
 
+@media (max-width: 1200px) {
+  .features__descr-list .descr-list__item {
+    width: calc(33.3333% - 20px);
+    margin: 25px 10px;
+  }
+}
+
 .features__descr-list .descr-list__item .features__icon--wrapper {
+  height: 100px;
   justify-content: center;
   align-items: center;
   margin-bottom: 65px;
   display: flex;
 }
 
+@media (max-width: 1200px) {
+  .features__descr-list .descr-list__item .features__icon--wrapper {
+    height: 85px;
+    margin-bottom: 55px;
+  }
+}
+
 .features__descr-list .descr-list__item .h4-title {
   text-transform: uppercase;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .features__descr-list .descr-list__item .h4-title {
+    margin-bottom: 25px;
+  }
 }
 
 .work__works-gallery {
@@ -177,7 +244,13 @@ a {
 
 .work__works-gallery .works-gallery__example .example__descr .h4-title {
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 1200px) {
+  .work__works-gallery .works-gallery__example .example__descr .h4-title {
+    margin-bottom: 20px;
+  }
 }
 
 .work__works-gallery .works-gallery__example:hover .example__descr {
@@ -195,9 +268,21 @@ a {
   padding: 115px 0;
 }
 
+@media (max-width: 1200px) {
+  .our-team {
+    padding: 80px 0;
+  }
+}
+
 .our-team__person-cards {
   margin: 0 -15px;
   display: flex;
+}
+
+@media (max-width: 1200px) {
+  .our-team__person-cards {
+    margin: 0 -13px;
+  }
 }
 
 .our-team__person-cards .person-card {
@@ -205,12 +290,28 @@ a {
   margin: 0 15px;
 }
 
+@media (max-width: 1200px) {
+  .our-team__person-cards .person-card {
+    width: calc(25% - 26px);
+    margin: 0 13px;
+  }
+}
+
 .our-team__person-cards .person-card__photo--wrapper {
   margin-bottom: 40px;
 }
 
+@media (max-width: 1200px) {
+  .our-team__person-cards .person-card__photo--wrapper {
+    margin-bottom: 25px;
+  }
+}
+
 .our-team__person-cards .person-card__photo--wrapper img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .our-team__person-cards .person-card .h4-title {
@@ -219,12 +320,25 @@ a {
   font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+  .our-team__person-cards .person-card .h4-title {
+    margin-bottom: 10px;
+  }
+}
+
 .our-team__person-cards .person-card .regular-text {
   text-align: left;
 }
 
 .our-team__person-cards .person-card .regular-text--red-color {
   margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .our-team__person-cards .person-card .regular-text--red-color {
+    height: 30px;
+    margin-bottom: 5px;
+  }
 }
 
 .our-team__person-cards .person-card__all-icons--wrapper {
@@ -329,11 +443,11 @@ a {
   font-weight: 700;
 }
 
-.download__title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 500;
+@media (max-width: 1200px) {
+  .download .button.h4-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .footer {
@@ -419,9 +533,24 @@ a {
 .h1-title {
   color: #fff;
   text-align: center;
+  text-transform: uppercase;
   font-size: 64px;
   font-weight: 900;
   line-height: 75px;
+}
+
+@media (max-width: 1200px) {
+  .h1-title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .h1-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .h2-text {
@@ -431,11 +560,33 @@ a {
   line-height: 49px;
 }
 
+@media (max-width: 1200px) {
+  .h2-text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
 .h3-title {
   text-align: center;
+  margin-bottom: 30px;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 35px;
+}
+
+@media (max-width: 1200px) {
+  .h3-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .h3-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .h4-title {
@@ -443,6 +594,13 @@ a {
   font-size: 24px;
   font-weight: 900;
   line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+  .h4-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .regular-text {
@@ -464,10 +622,24 @@ a {
   color: #6c7279;
 }
 
+@media (max-width: 1200px) {
+  .regular-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 .small-text {
   font-size: 13px;
   font-weight: 700;
   line-height: 15px;
+}
+
+@media (max-width: 1200px) {
+  .small-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .button {
@@ -480,6 +652,11 @@ a {
   margin: 0 auto;
   padding: 25px 0;
   transition: all .3s;
+}
+
+.button.h4-title {
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .button:hover {

@@ -8,10 +8,19 @@
       text-transform: uppercase;
    }
 
-   &__title{
-      font-weight: 500;
-      font-size: 30px;
-      text-align: center;
-      margin-bottom: 30px;
+   .button.h4-title{
+
+      @media (max-width: $breakpoint_xl){
+         font-size: 18px;
+         line-height: 21px;
+      }
+      
    }
+
+   // &__title{
+   //    font-weight: 500;
+   //    font-size: 30px;
+   //    text-align: center;
+   //    margin-bottom: 30px;
+   // }
 }
