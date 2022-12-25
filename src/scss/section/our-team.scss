@@ -5,12 +5,21 @@
       padding: 80px 0;
    }
 
+   @media (max-width: $breakpoint_md){
+      padding: 35px 0;
+   }
+
    &__person-cards{
       margin: 0 -15px;
       display: flex;
 
       @media (max-width: $breakpoint_xl){
          margin: 0 -13px;
+      }
+
+      @media (max-width: $breakpoint_md){
+         flex-direction: column;
+         margin: 0;
       }
 
       .person-card{
@@ -20,6 +29,11 @@
          @media (max-width: $breakpoint_xl){
             width: calc(100% / 4 - 26px);
             margin: 0 13px;
+         }
+
+         @media (max-width: $breakpoint_md){
+            width: 100%;
+            margin: 0;
          }
 
          &__photo--wrapper{
@@ -61,11 +75,20 @@
                   height: 30px;
                   margin-bottom: 5px;
                }
+
+               @media (max-width: $breakpoint_md){
+                  height: 100%;
+                  margin-bottom: 40px;
+               }
             }
          }
          &__all-icons--wrapper{
             margin: 40px -3px 0;
             display: flex;
+
+            @media (max-width: $breakpoint_md){
+               margin-top: 50px;
+            }
 
             .person-card__icon--wrapper{
                width: 40px;
@@ -74,7 +97,17 @@
                margin: 0 3px;
                display: flex;
                justify-content: center;
-               align-items: center;              
+               align-items: center;  
+               
+               @media (max-width: $breakpoint_xl){
+                  width: 30px;
+                  height: 30px;
+               }
+
+               @media (max-width: $breakpoint_md){
+                  width: 40px;
+                  height: 40px;
+               }
 
                svg{
                   // max-width: 30px;
@@ -96,6 +129,10 @@
             }
          }
 
+      }
+
+      .person-card:not(.person-card:last-child){
+         margin-bottom: 50px;
       }
    }
 }

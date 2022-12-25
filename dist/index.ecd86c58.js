@@ -1,1 +1,0 @@
-$(document).ready((function(){$(".testimonials__slider").slick({arrow:!1,dots:!0})}));

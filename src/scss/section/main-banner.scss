@@ -8,6 +8,11 @@
       padding-top: 255px;
       padding-bottom: 125px;
    }
+
+   @media (max-width: $breakpoint_md){
+      padding-top: 105px;
+      padding-bottom: 50px;
+   }
    
    p {
       font-weight: 400;
@@ -19,6 +24,11 @@
       @media (max-width: $breakpoint_xl){
          margin-top: 60px;
          margin-bottom: 90px;
+      }
+
+      @media (max-width: $breakpoint_xl){
+         margin-top: 30px;
+         margin-bottom: 50px;
       }
    }
 

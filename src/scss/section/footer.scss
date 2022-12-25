@@ -2,10 +2,18 @@
    background-color: $footer-bg-color-light;
    padding-top: 75px;
 
+   @media (max-width: $breakpoint_xl){
+      padding-top: 45px;
+   }
+
    &__contacts{
       display: flex;
       margin: 0 -15px;
       padding-bottom: 70px;
+
+      @media (max-width: $breakpoint_xl){
+         padding-bottom: 40px;
+      }
 
       .footer__contact{
          width: calc(100% / 3 - 30px);
@@ -18,13 +26,21 @@
          .regular-text:first-child{
             font-weight: 700;
             text-transform: uppercase;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+
+            @media (max-width: $breakpoint_xl){
+               margin-bottom: 15px;
+            }
          }
 
          .footer__icons--wrapper{
             display: flex;
             margin: 50px -15px 0;
             justify-content: center;
+
+            @media (max-width: $breakpoint_xl){
+               margin: 30px -10px 0;
+            }
 
             .footer__icon--wrapper{
                display: flex;
@@ -34,6 +50,12 @@
                border: 1px solid $gray-icon;
                width: 40px;
                height: 40px;
+
+               @media (max-width: $breakpoint_xl){
+                  margin: 0 10px;
+                  width: 35px;
+                  height: 35px;
+               }
 
                svg{
                   // max-width: 30px;
@@ -63,11 +85,20 @@
       background-color: $footer-bg-color-dark;
       padding: 30px 0;
 
+      @media (max-width: $breakpoint_xl){
+         padding: 15px 0;
+      }
+
       .regular-text{
-         width: calc(100% / 3);
+         // width: calc(100% / 3);
+         max-width: 370px;
          text-transform: capitalize;
          text-align: center;
          margin: 0 auto;
+
+         @media (max-width: $breakpoint_xl){
+            max-width: 315px;
+         }
 
          .highlight{
             color: $white;

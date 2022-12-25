@@ -1,11 +1,23 @@
 .download{
-   padding-top: 115px;
-   padding-bottom: 115px;
+   padding: 115px 0;
+
+   @media (max-width: $breakpoint_xl){
+      padding: 75px 0;
+   }
 
    .regular-text{
       margin-bottom: 50px;
       font-weight: 700;
       text-transform: uppercase;
+
+      @media (max-width: $breakpoint_xl){
+         margin-bottom: 45px;
+      }
+
+      @media (max-width: $breakpoint_md){
+         font-size: 13px;
+         line-height: 15px;
+      }
    }
 
    .button.h4-title{

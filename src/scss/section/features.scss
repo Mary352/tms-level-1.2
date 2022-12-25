@@ -1,10 +1,15 @@
 .features{
    padding-top: 115px;
-   padding-bottom: 135px;
+   padding-bottom: 135px;   
 
    @media (max-width: $breakpoint_xl){
       padding-top: 75px;
       padding-bottom: 80px;
+   }
+
+   @media (max-width: $breakpoint_md){
+      padding-top: 40px;
+      padding-bottom: 35px;
    }
 
    &__descr-list{
@@ -16,6 +21,11 @@
          margin: -25px -10px;
       }
 
+      @media (max-width: $breakpoint_md){
+         flex-direction: column;
+         margin: 0;
+      }
+
       .descr-list__item{
          width: calc(100% / 3 - 30px);
          margin: 45px 15px;
@@ -23,6 +33,11 @@
          @media (max-width: $breakpoint_xl){
             width: calc(100% / 3 - 20px);
             margin: 25px 10px;
+         }
+
+         @media (max-width: $breakpoint_md){
+            width: 100%;
+            margin: 0;
          }
 
          .features__icon--wrapper{
@@ -39,6 +54,12 @@
                // width: 85px;
                height: 85px;
             }
+
+            @media (max-width: $breakpoint_md){
+               margin-bottom: 40px;
+               // width: 85px;
+               height: 75px;
+            }
          }
 
          .h4-title{
@@ -48,6 +69,15 @@
             @media (max-width: $breakpoint_xl){
                margin-bottom: 25px;
             }
+
+            @media (max-width: $breakpoint_md){
+               margin-bottom: 10px;
+            }
+         }
+      }
+      .descr-list__item:not(.descr-list__item:last-child){
+         @media (max-width: $breakpoint_md){
+            margin-bottom: 40px;
          }
       }
    }

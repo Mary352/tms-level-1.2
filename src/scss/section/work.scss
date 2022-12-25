@@ -9,6 +9,10 @@
          width: calc(100% / 4 - 2px);
          margin: 1px;
 
+         @media (max-width: $breakpoint_md){
+            width: calc(100% / 2 - 2px);
+         }
+
          .example__img{
             // width: calc(100% / 4 - 2px);
             display: block;
@@ -40,6 +44,10 @@
 
                @media (max-width: $breakpoint_xl){
                   margin-bottom: 20px;
+               }
+
+               @media (max-width: $breakpoint_md){
+                  margin-bottom: 10px;
                }
             }
          }    
