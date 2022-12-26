@@ -84,6 +84,29 @@
                   // max-height: 30px;
                   fill: $gray-icon;
                }
+
+               .facebook{
+               
+                  @media (max-width: $breakpoint_md){
+                     width: 8px;
+                     height: 15px;
+                  }
+               }
+               
+               .twitter{
+               
+                  @media (max-width: $breakpoint_md){
+                     width: 17px;
+                     height: 14px;
+                  }
+               }
+               
+               .linkedin{
+                  @media (max-width: $breakpoint_md){
+                     width: 15px;
+                     height: 15px;
+                  }
+               }
             }
 
             .footer__icon--wrapper:hover{

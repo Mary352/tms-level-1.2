@@ -166,6 +166,11 @@
       width: 8px;
       height: 15px;
    }
+
+   @media (max-width: $breakpoint_md){
+      width: 10px;
+      height: 18px;
+   }
 }
 
 .twitter{
@@ -176,6 +181,11 @@
       width: 17px;
       height: 14px;
    }
+
+   @media (max-width: $breakpoint_md){
+      width: 20px;
+      height: 16px;
+   }
 }
 
 .linkedin{
@@ -185,5 +195,10 @@
    @media (max-width: $breakpoint_xl){
       width: 15px;
       height: 15px;
+   }
+
+   @media (max-width: $breakpoint_md){
+      width: 18px;
+      height: 18px;
    }
 }
