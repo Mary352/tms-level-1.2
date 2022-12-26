@@ -125,6 +125,7 @@ a {
 .header__nav .list-link {
   text-transform: uppercase;
   color: #fff;
+  z-index: 3;
   padding: 40px;
   position: relative;
 }
@@ -187,15 +188,13 @@ a {
     left: 50%;
     transform: translate(-50%);
   }
-}
 
-@media (max-width: 768px) {
-  .header:after {
+  .header #header__check-menu:checked ~ .header__nav:after {
     content: "";
-    width: 100%;
+    width: 200%;
     height: 100%;
     opacity: .8;
-    z-index: 6;
+    z-index: 2;
     background-color: #252b49;
     display: block;
     position: absolute;
