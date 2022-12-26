@@ -3,6 +3,7 @@
    &__works-gallery{
       display: flex;
       flex-wrap: wrap;
+      max-width: 1536px;
 
       .works-gallery__example{
          position: relative;
