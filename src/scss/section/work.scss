@@ -1,9 +1,10 @@
 .work{
-
+   max-width: 1536px;
+   margin: 0 auto;
+   
    &__works-gallery{
       display: flex;
       flex-wrap: wrap;
-      max-width: 1536px;
 
       .works-gallery__example{
          position: relative;
