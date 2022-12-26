@@ -44,9 +44,11 @@ a {
 
 .header #header__check-menu:checked ~ .header__nav {
   max-height: max-content;
+  height: 100vh;
   padding-top: 110px;
   transition: all .3s;
   display: block;
+  position: fixed;
 }
 
 .header #header__check-menu:checked ~ .header__check-menu-label .label__burger-line {
@@ -201,6 +203,10 @@ a {
     top: 0;
     left: 0;
   }
+}
+
+.header:has(#header__check-menu:checked) {
+  position: fixed;
 }
 
 .main-banner {
